@@ -1,15 +1,25 @@
 const express = require('express');
+const pool = require('./database');
+const cors = require('cors');  //cors is nodeJS package
 
+// express App
 const app = express();
-const port= 8080;
+//Port
+const port= 5000;
 
-//App routing
-app.get('/', (req, res) => {
-});
+// Middleware
+app.use(cors());
+app.use(express.json());
 
 
-//which port app need to listen
+
+// App routing
+app.get('/', pool.getAllRows);
+
+
+//listen for requests
 app.listen(port, () => {
   console.log(`App is running on port ${port}`);
 })
+
 

@@ -1,0 +1,30 @@
+{
+  "name": "budget-app",
+  "version": "1.0.0",
+  "description": "budget web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniawojcik002/BudgetApp.git"
+  },
+  "keywords": [
+    "react",
+    "express"
+  ],
+  "author": "ana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aniawojcik002/BudgetApp/issues"
+  },
+  "homepage": "https://github.com/aniawojcik002/BudgetApp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "pg": "^8.8.0"
+  }
+}
