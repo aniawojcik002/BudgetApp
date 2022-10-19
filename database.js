@@ -18,4 +18,4 @@ const getAllRows = async (req, res) => {
   });
 };
 
-module.exports = { pool, deleteRow, getAllRows };
+module.exports = { pool, getAllRows };

@@ -1,0 +1,26 @@
+.navbar {
+  background-color: yellow;
+  width: 150px;
+  /* padding: 5px; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+ul {
+  /* it should be global */
+  padding: 0;
+  list-style-type: none;
+}
+.navLink  {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  display: block;  
+}
+/* a:-webkit-any-link {
+  text-decoration: none;
+  display: block;
+  color: white;
+  cursor: pointer;
+} */

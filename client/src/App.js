@@ -1,10 +1,18 @@
-import './App.css';
+
+import "./App.css";
+import { Transactions } from "./Components/Transactions/Transactions";
+import { Routes, Route } from "react-router-dom";
+import { Dashboard } from "./Components/Dashboard/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <div>Main Dashboard</div>
-    </div>
+    <>
+      
+      <Routes>
+        <Route path="transactions" element={<Transactions />} />
+        <Route path="dashboard" element={<Dashboard />}></Route>
+      </Routes>
+    </>
   );
 }
 
