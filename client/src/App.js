@@ -7,9 +7,8 @@ import { Dashboard } from "./Components/Dashboard/Dashboard";
 function App() {
   return (
     <>
-      
       <Routes>
-        <Route path="transactions" element={<Transactions />} />
+        <Route path="transactions" element={<Transactions/>} />
         <Route path="dashboard" element={<Dashboard />}></Route>
       </Routes>
     </>
