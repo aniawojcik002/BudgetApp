@@ -1,0 +1,4 @@
+.dashboardPageWrapper {
+  display: flex;
+  flex-direction: row;
+}
