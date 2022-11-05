@@ -1,7 +1,16 @@
 import Header from "../Header/Header";
 import styles from "./Dashboard.module.css";
+import Modal from "./Modal";
+import { useState } from "react";
 
 export const Dashboard = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const handleModal = () => {
+    setOpenModal(true);
+  }
+  const onCloseHandle = () => {
+    setOpenModal(false)
+  }
   return (
     <>
       <div className={styles.dashboardPageWrapper}>
@@ -17,7 +26,8 @@ export const Dashboard = () => {
             </div>
           </div>
           <div className={styles.buttons}>
-            <button>Add spending</button>
+            <button onClick={handleModal}>Add spending</button>
+            <Modal open={openModal} onClose={onCloseHandle}/>
             <button>Delete spending</button>
           </div>
         </div>
